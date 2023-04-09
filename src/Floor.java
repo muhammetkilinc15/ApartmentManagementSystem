@@ -22,7 +22,7 @@ public class Floor {
         for (int i = 0; i < Apartment.floorNumber; i++) {
             for (int j = 0; j<apartman.floors[i].flatCount; j++){
                 if (FlatNumber == apartman.floors[i].flats[j].getFlatNumber()) {
-                    System.out.printf("\nNumber was %d used for an flat on the  %d. floor.You can not use this number\n",FlatNumber,flatCount);
+                    System.out.printf("\nNumber was %d used for an flat on the  %d. floor.You can not use this number\n",FlatNumber,i);
                     return false;
                 }
             }

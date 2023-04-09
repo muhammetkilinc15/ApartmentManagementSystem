@@ -40,12 +40,12 @@ public class Main {
         floor[1].flats[0].addPeople(new People("Biden Haven",21));
         floor[1].flats[0].addPeople(new People("Beyza Kılınç",21));
 
-        floor[2].flats[1].addPeople(new People("jack Hill",61));
         floor[2].flats[0].addPeople(new People("Marry Jane",72));
 
+
+        floor[2].flats[1].addPeople(new People("jack Hill",61));
         floor[2].flats[1].addPeople(new People("Alex Richardson",56));
         floor[2].flats[1].addPeople(new People("Ema Richardson ",48));
-
         floor[2].flats[1].addPeople(new People("Davis Anderson",21));
         floor[2].flats[1].addPeople(new People("Mike Clark ",26));
 
