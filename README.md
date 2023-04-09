@@ -1,7 +1,7 @@
 The first project where I drew the uml diagram myself. Frankly, I didn't like it, but I'm uploading it to github to get emotional that I'm doing better in the future.
 
+![Uml drawio (1)](https://user-images.githubusercontent.com/108901980/230774696-faac28d3-98fb-48b3-a26e-18c64e51c138.png)
 
-[Apartment Managemtn System.pdf]
 
 ![Screenshot (74)](https://user-images.githubusercontent.com/108901980/230774108-5ead7b91-bd43-4fe7-bed8-4a04719a966e.png)
 
