@@ -38,7 +38,7 @@ public class Main {
         floor[0].flats[1].addPeople(new People("Bella Grey",44));
 
         floor[1].flats[0].addPeople(new People("Biden Haven",21));
-        floor[1].flats[0].addPeople(new People("Beyza Kılınç",21));
+        floor[1].flats[0].addPeople(new People("Mark one",21));
 
         floor[2].flats[0].addPeople(new People("Marry Jane",72));
 
