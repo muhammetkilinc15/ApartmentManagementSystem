@@ -10,16 +10,16 @@ public class Floor {
         this.flats = new Flat[2];
     }
 
-    public void createFlat(int flatNumber, Apartman apartman) {
+    public void createFlat(int flatNumber, Apartment apartman,String flatType) {
         if (isValidFlatNumber(flatNumber,apartman)) {
-            flats[flatCount] = new Flat(floorNumber);
+            flats[flatCount] = new Flat(floorNumber,flatType);
             flats[flatCount].setFlatNumber(flatNumber);
             flatCount++;
         }
     }
-    public boolean isValidFlatNumber(int FlatNumber, Apartman apartman) {
+    public boolean isValidFlatNumber(int FlatNumber, Apartment apartman) {
 
-        for (int i = 0; i < Apartman.floorNumber; i++) {
+        for (int i = 0; i < Apartment.floorNumber; i++) {
             for (int j = 0; j<apartman.floors[i].flatCount; j++){
                 if (FlatNumber == apartman.floors[i].flats[j].getFlatNumber()) {
                     System.out.printf("\nNumber was %d used for an flat on the  %d. floor.You can not use this number\n",FlatNumber,flatCount);

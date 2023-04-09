@@ -3,7 +3,9 @@ public class Flat {
     private int flatNumber;
     private People[] people;
     private int humanCount=0;
-    public Flat(int flatNumber){
+    private String flatType;
+    public Flat(int flatNumber,String flatType){
+        this.flatType=flatType;
         this.flatNumber =flatNumber;
         this.people =new People[50];
     }
@@ -17,16 +19,13 @@ public class Flat {
     public void setFlatNumber(int flatNumber) {
         this.flatNumber = flatNumber;
     }
-    public People[] getPeople() {
-        return people;
-    }
     public String toString(){
         if (humanCount==0){
             return "------------------------------------" +
                     "\n⚫Flat number: "+ flatNumber +
                     "\n⭕Flat is empty";
         }
-        String peopleInformation="";
+        String peopleInformation="🔶Flat type: "+flatType;
         for (int i=0;i<humanCount;i++){
             peopleInformation+= "\n🔶Name Surname: "+people[i].getName()+"\n🔶Age=>"+ people[i].getAge()+"\n";
         }

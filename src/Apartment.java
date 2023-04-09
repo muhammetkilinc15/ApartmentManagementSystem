@@ -1,4 +1,4 @@
-public class Apartman {
+public class Apartment {
 
     private String apartmentName;
     private int apartmentNumber;
@@ -7,9 +7,9 @@ public class Apartman {
      Floor[] floors;
 
 
-    public Apartman(String apartmanAdi, int apartmanNumarasi) {
-        this.apartmentName = apartmanAdi;
-        this.apartmentNumber = apartmanNumarasi;
+    public Apartment(String apartmentName, int apartmentNumber) {
+        this.apartmentName = apartmentName;
+        this.apartmentNumber = apartmentNumber;
         this.floors = new Floor[15];
     }
     public Floor[] getFloors() {
@@ -17,12 +17,12 @@ public class Apartman {
     }
 
     public void createFloor(int floorNumber, String floorColor) {
-
-
-        if (isValidFloorColor(floorColor) && isValidFloorNumber(floorNumber)) {
-            floors[Apartman.floorNumber] = new Floor(floorNumber, floorColor);
-            System.out.printf("\n%d. floor succesfully painted %s \n", Apartman.floorNumber, floorColor);
-            Apartman.floorNumber++;
+        if ( isValidFloorNumber(floorNumber)) {
+            if (isValidFloorColor(floorColor)){
+                floors[Apartment.floorNumber] = new Floor(floorNumber, floorColor);
+                System.out.printf("\n%d. floor succesfully painted %s \n", floorNumber, floorColor);
+                Apartment.floorNumber++;
+            }
         }
     }
 
@@ -39,8 +39,9 @@ public class Apartman {
         if (floorNumber<0){
             return false;
         }else {
-            for (int i = 0; i< Apartman.floorNumber; i++){
+            for (int i = 0; i< Apartment.floorNumber; i++){
                 if (floorNumber== floors[i].getFloorNumber()){
+                    System.out.printf("You have already arranged the %d. floor. You cannot edit again\n",floorNumber);
                     return false;
                 }
             }
@@ -54,13 +55,19 @@ public class Apartman {
         return apartmentNumber;
     }
     public String toString() {
+        for (int i = 0; i< floorNumber; i++){
+            for (int j = 0; j< floors[i].flatCount; j++){
+                System.out.println(floors[i].flats[j].toString());
+            }
+        }
+
         return "\nApartment Name: " + getApartmentName() +
                 "\nApartment Number: " + getApartmentNumber() +
                 "\nApartment Floor Number: " + (floorNumber -1);
 
     }
-    public void printInformationOfApartment(){
-        System.out.println("\nApartment information and names of people living in the apartment");
+    public void printInformationOfFLat(){
+        System.out.println("\n\nApartment information and names of people living in the apartment");
         for (int i = 0; i< floorNumber; i++){
             for (int j = 0; j< floors[i].flatCount; j++){
                 System.out.println(floors[i].flats[j].toString());
