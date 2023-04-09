@@ -2,7 +2,8 @@ The first project where I drew the uml diagram myself. Frankly, I didn't like it
 
 
 [Apartment Managemtn System.pdf](https://github.com/muhammetkilinc15/ApartmentManagementSystem/files/11185423/Apartment.Managemtn.System.pdf)
-![Screenshot (70)](https://user-images.githubusercontent.com/108901980/230772619-485b75fa-d0d0-4895-af02-f1dbf752c6e0.png)
+![Screenshot (73)](https://user-images.githubusercontent.com/108901980/230773279-b05335c6-8772-4b3d-9c08-c7a19983ad47.png)
+
 
 ![Screenshot (71)](https://user-images.githubusercontent.com/108901980/230772623-ca5ffb46-a099-433e-9fac-1a2e811995bb.png)
 
